@@ -1,0 +1,51 @@
+group 'TNR_WPO.generated'
+version '1.0'
+
+apply plugin: 'java'
+
+// If necessary, update the location of TestProject SDK JAR file
+def TP_SDK = 'lib\\TestProject_SDK_0.63.0.jar'
+
+compileJava.options.encoding = 'UTF-8'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+// Configurations
+configurations {
+    tpsdk
+    compile.extendsFrom tpsdk
+}
+
+// JAR Task
+jar {
+    assert file("${TP_SDK}").exists() : "TestProject SDK JAR file was not found, please update the TP_SDK variable"
+    archiveName "${rootProject.name}-${version}.jar"
+    dependsOn configurations.runtime
+    from {
+        // Removes TestProject SDK from the final jar file
+        (configurations.runtime - configurations.tpsdk).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+
+    // Extract SDK version
+    from {
+        (configurations.tpsdk).collect {
+            zipTree(it).matching {
+                include 'testproject-sdk.properties'
+            }
+        }
+    }
+
+}
+
+dependencies {
+    tpsdk files("${TP_SDK}")
+	compile files('lib\\Web-Extensions.proxy.jar')
+	compile files('lib\\Web-List-Operations.proxy.jar')
+	compile files('lib\\Element-Extensions.proxy.jar')
+}

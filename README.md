@@ -17,9 +17,11 @@ Cette étude permet aussi de déboucher sur une structure préexistante pour l'a
 
 ## Objectifs du document
 
-L'outil de test choisi au terme d'une étude comparative est TestProject, outil gratuit qui propose notamment une 
+L'outil de test choisi au terme d'une étude comparative est TestProject, outil gratuit qui propose de construire des cas de test , de les assembler en campagnes (jobs) et des les lancer sur des postes de travail muni d'automates (nommés "agents"). 
 
+L'interface TestProject est géré par une application Web (à l'adresse  : [Adresse Site TestProject](https://app.testproject.io/#/projects/)  )
 
+Ce repository vise à indiquer les procédés à suivre pour la concept
 Ce document vise à préciser les process liés à l'utilisation de tests codés sur TestProject. 
 
 ## 

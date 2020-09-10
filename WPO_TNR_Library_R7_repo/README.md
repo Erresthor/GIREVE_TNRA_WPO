@@ -38,11 +38,12 @@ Ce repository vise à indiquer :
 
 
 ## Coder des tests de Non Régression
-*TestProject permet de concevoir des tests : 
+TestProject permet de concevoir des tests : 
 -   Sur son interface native : 
-[InterfaceNative_TestProject](/images/ConceptionCasDeTest_IHMTP.PNG?raw=true "Interface native")
+[InterfaceNative_TestProject](/images/ConceptionCasDeTest_IHMTP.PNG "Interface native")
+-   En important des tests codés (Java, Python , C#) en local et en les incluant dans les tests.
 
-
+__*Pourquoi faire appel à des tests codés ?*__
 ### Appel à des bibliothèques externes
 L'outil TestProject propose déjà un ensemble de fonctions de base (telles que "Clicker", "Taper un texte dans", etc.). Par ailleurs, les fonctions ajoutées par la communauté sont également utilisables dans nos cas de test. Cela permet d'interagir avec un grand nombre d'éléments Web. 
 L'utilisation de tests codés permet néanmoins de faire appel directement aux fonctions de la bibliothèque [Selenium Webdriver](https://www.selenium.dev/documentation/en/webdriver/) ainsi qu'à d'autres fonctions Java qui pourront être utiles dans nos cas de test (Split de Stings, rcupération de la date du jour, etc.).
@@ -50,8 +51,20 @@ L'utilisation de tests codés permet néanmoins de faire appel directement aux f
 ### Scenarii conditionnels
 Dans certains Use Case du site WPO, un grand nombre de fonctions requièrent des protocoles (suites d'actions) dépendant d'un grand nombre de paramètres (par exemple , cliquer sur "un réseau" ou "une operaion" lors de la créatio d'une offre, cliqquer sur un jour donné lorsque l'on précise le fonctionnement en horaires, etc.). L'interface TestProject gère mal ces conditions et **il est nécessaire de passer par un outil de programmation**.
 
+__*Comment faire interagir des tests réalisés en interface native & en code ?*__
 ### Interaction entre Tests Codés & Tests Natifs de l'Interface
+L'interaction de Cas de Test créés sur interface native & codés présente certaines contraintes.
 
+**On peut :**
+-   Inspecter les composants d'un test NON CODÉ (étapes & paramètres) dans l'Interface TestProject
+-   Editer directement sur l'IHM un Test NON CODÉ
+-   Utiliser dans un test NON CODÉ un test CODÉ ou un test NON CODÉ
+-   Utiliser dans un test CODÉ un test CODÉ
+
+En revanche, **on ne peut pas :**
+-   Inspecter les composants d'un test CODÉ (étapes & paramètres) dans l'Interface TestProject
+-   Editer directement sur l'IHM un Test CODÉ
+-   Utiliser dans un test CODÉ un test NON CODÉ
 
 
 ## Conception d'un test codé
@@ -123,3 +136,4 @@ A titre Informatif, on se propose de rassembler ici quelques sources intéressan
 
 ### Définitions propres à l'outil de Test:
 
+**Agent :**

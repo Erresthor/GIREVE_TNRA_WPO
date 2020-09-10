@@ -40,7 +40,7 @@ Ce repository vise à indiquer :
 ## Coder des tests de Non Régression
 TestProject permet de concevoir des tests : 
 -   Sur son interface native : 
-[InterfaceNative_TestProject](/images/ConceptionCasDeTest_IHMTP.PNG "Interface native")
+![InterfaceNative_TestProject](/images/ConceptionCasDeTest_IHMTP.PNG "Interface native")
 -   En important des tests codés (Java, Python , C#) en local et en les incluant dans les tests.
 
 __*Pourquoi faire appel à des tests codés ?*__
@@ -57,17 +57,29 @@ L'interaction de Cas de Test créés sur interface native & codés présente cer
 
 **On peut :**
 -   Inspecter les composants d'un test NON CODÉ (étapes & paramètres) dans l'Interface TestProject
--   Editer directement sur l'IHM un Test NON CODÉ
--   Utiliser dans un test NON CODÉ un test CODÉ ou un test NON CODÉ
--   Utiliser dans un test CODÉ un test CODÉ
+-   Editer un Test NON CODÉ directement sur l'IHM
+-   Utiliser un test CODÉ ou un test NON CODÉ dans un test NON CODÉ
+-   Utiliser un test CODÉ dans un test CODÉ
 
 En revanche, **on ne peut pas :**
--   Inspecter les composants d'un test CODÉ (étapes & paramètres) dans l'Interface TestProject
--   Editer directement sur l'IHM un Test CODÉ
--   Utiliser dans un test CODÉ un test NON CODÉ
+-   Inspecter les composants d'un test CODÉ (étapes ,etc.) dans l'Interface TestProject
+-   Editer un Test CODÉ directement sur l'IHM 
+-   Utiliser un test NON CODÉ dans un test CODÉ
 
 
 ## Conception d'un test codé
+
+### Projet Type
+Architecture d'un projet type
+
+
+### Bibliothèques sources
+Quelles bibliothèques sont utilisées
+
+###
+
+
+
 ### Bibliothèques utilisées
 ### Architecture Standard
 ### Grands principes de conception proposés

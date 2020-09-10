@@ -40,7 +40,7 @@ Ce repository vise à indiquer :
 ## Coder des tests de Non Régression
 TestProject permet de concevoir des tests : 
 -   Sur son interface native : 
-![InterfaceNative_TestProject](/images/ConceptionCasDeTest_IHMTP.PNG "Interface native")
+![InterfaceNative_TestProject](images/ConceptionCasDeTest_IHMTP.PNG "Interface native")
 -   En important des tests codés (Java, Python , C#) en local et en les incluant dans les tests.
 
 __*Pourquoi faire appel à des tests codés ?*__

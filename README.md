@@ -71,10 +71,15 @@ A titre Informatif, on se propose de rassembler ici quelques sources intéressan
 
 ### Définitions Générales
 **Régression :** Une régression est un défaut introduit dans un logiciel à l'occasion de corrections de bogues ou n'importe quel changement établi dans un logiciel (Wikipedia).
+
 **Test de Non Regression :** Test qui vise à repérer ces régressions les plus tôt possible dans le process de Mise En Production. Plus une régression est remarquée vite, moins elle est chère.
+
 **Use Case :** Un Use case est une fonctionnalité spécifiée qui sera réalisée par un acteur donné (Humain ou logiciel) et qui mène à un résultat donné (Ex: Un client se Log-in).
+
 **Test Case / Cas De Test :** La réalisation d'un *"Use Case"* avec un environnement et des données particulières.
+
 **Campagne de Test :** Un ensemble de Cas de Test qui seront lancés en même temps. La campagne de test présente à la fin de son exécution un rapport qui permet de connaitre les régressions éventulles.
+
 **Outil de Test :** Un logiciel permettant la conception de *Cas de Test* automatisés , leur assemblage en *Campagnes de Test*, leur exécution et la génération d'un rapport.
 
 ### Définitions propres à l'outil de Test:
